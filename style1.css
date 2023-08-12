@@ -1,0 +1,240 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: black;
+    color:white;
+   
+}
+#header{
+    width:100%;
+    height:100vh;
+    background-image: url(./businesswoman.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.btn2{
+    display:inline-block;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color:orangered;
+    margin-left:35px;
+    padding-left:20px;
+  }
+ .circle{
+    padding-left: 20px; 
+ background-color:rgb(247, 185, 28);
+ width:50px;
+ height:50px;
+ border-radius: 50%;
+ padding-left:20px;
+ }
+.step4{
+ position: absolute;
+  top:250px;
+ left:17px;
+ padding-left: 20px;
+ border-left: 20px solid red;
+ border-right: 0px solid green;
+ border-top: 11px solid transparent;
+ border-bottom: 10px solid transparent;  
+ width: 0px;
+ height: 0px;
+    }
+ #about{
+      padding:80px 0;
+      color:white;
+      /* border:1px solid white; */
+      width:100%;
+      height:110vh;
+      position: absolute;
+      top:600px;
+      left:0;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .about-col-1{
+        flex-basis: 35%;
+
+    }
+    .about-col-1 img{
+        width:100%;
+        border-radius: 15px;
+
+    }
+    .about-col-2{
+     flex-basis: 60%;
+    }
+    .suitable{
+        font-size:60px;
+        font-weight:600;
+        color:white;
+    }
+    .tab-titles{
+        display:flex;
+        margin:20px 0 40px;
+    }
+    .tab-links{
+        margin-right:50px;
+        font-size:18px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+    }
+    .tab-links::after{
+        content:'';
+        width:0;
+        height:3px;
+        background: #ff004f;
+        position:absolute;
+        left:0;
+        bottom: -8px;
+        transition: 0.5s;
+    }
+    .tab-links.active-link::after{
+        width:100%;
+
+    }
+    .tab-contents ul li{
+        list-style: none;
+        margin:10px 0;
+    }
+    .tab-contents ul li span{
+        color:#b54769;
+        font-size:14px;
+    }
+   #skills{
+     width:100%;
+     height:100vh;
+     border:1px solid white;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     position: absolute;
+     top:1200px;
+     left:0;
+   }
+   .content{
+    position: relative;
+    top:20px;
+    left:10px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    
+   }
+   .skill-sec{
+    width:600px;
+    height:500px;
+    padding:75px 90px;
+    margin-left:120px;
+
+   }
+   .demo{
+    margin-bottom: 50px;
+    position: relative;
+    left:10px;
+
+   }
+    .heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom:50px;
+   } 
+/* projects */
+#project{
+   padding:50px 0;
+}
+.project-sec{
+    display: flex;
+      flex-direction:row;
+      border: 2px solid black;
+      width:100%;
+      height:600px;
+      flex-wrap: wrap;
+      position: absolute;
+      top:1800px;
+      background-color:black;
+  }
+  .project-top{
+    display: flex;
+    flex-direction: column;
+    width:500px;
+    height:60px;
+    flex-wrap:wrap;
+    position: absolute;
+    top:30px;
+    left:50px;
+    color:black;
+  }
+  .project-image{
+      width:250px;
+      height:350px;
+      margin-top:120px;
+      margin-left: 50px;
+      margin-right: 50px;
+      background-image: url(./projects.jpg);
+      background-repeat: no-repeat;
+     transition: 0.5s;
+    }
+    .project-image p{
+      opacity:0;
+      transform: scale(0);
+      transition: 0.8s;
+      color:white;
+    }
+    .project-image:hover{
+      box-shadow: 0 0 0 200px green inset;
+    
+    }
+    .project-image:hover p{
+      opacity:1;
+      transform: scale(1);
+    }  
+    .contact-sec{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid white;
+        width:100%;
+        height:700px;
+        flex-wrap: wrap;
+        position: absolute;
+        top:2400px;
+        background-color:black;
+    }
+  .contact-top{
+  display: flex;
+  flex-direction: column;
+  width:500px;
+  height:60px;
+  flex-wrap:wrap;
+  position: absolute;
+  top:30px;
+  left:50px;
+  color:white;
+}
+.contact-item{
+  width:500px;
+    height:450px;
+   padding:10px;
+    margin-top:120px;
+    margin-left:10px;
+    
+    text-decoration-color:white;
+    background-color:black;
+    
+    
+  }
+  
+
